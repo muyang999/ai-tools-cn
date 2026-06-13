@@ -199,8 +199,15 @@
   </div>
   <footer>&copy; 2026 中文 AI 工具站</footer>
 
-  <script>
-    const API_URL = "http://localhost:8866/api/";
+  
+<script>
+// API 基础路径：相对路径（同域）优先，localhost 备用
+const API_BASE = (window.location.hostname === 'localhost' || 
+                  window.location.hostname === '127.0.0.1' ||
+                  window.location.port === '8866') ? '' : 'http://localhost:8866';
+</script>
+<script>
+    const API_URL = "/api/";
 
     async function rewrite() {
       const text = document.getElementById("input-text").value.trim();
