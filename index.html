@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>中文 AI 工具站</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      background: #f5f7fa;
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; flex: 1; }
+    header { text-align: center; margin-bottom: 48px; }
+    header h1 { font-size: 2rem; color: #1a73e8; margin-bottom: 10px; }
+    header p { font-size: 1rem; color: #666; }
+    .cards { display: flex; gap: 24px; }
+    .card {
+      flex: 1;
+      background: #fff;
+      border-radius: 16px;
+      padding: 36px 28px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      transition: transform 0.2s, box-shadow 0.2s;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,0.1); }
+    .card-icon {
+      width: 64px; height: 64px;
+      border-radius: 16px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 28px; margin-bottom: 18px;
+    }
+    .card-icon.red { background: #fce8e6; }
+    .card-icon.blue { background: #e8f0fe; }
+    .card h2 { font-size: 1.25rem; color: #1a73e8; margin-bottom: 10px; }
+    .card p { font-size: 0.9rem; color: #777; line-height: 1.6; }
+    .card .badge {
+      display: inline-block;
+      margin-top: 16px;
+      padding: 6px 18px;
+      border-radius: 20px;
+      background: #1a73e8;
+      color: #fff;
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+    #ad-slot {
+      margin-top: 48px;
+      min-height: 90px;
+      background: #eee;
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      color: #aaa; font-size: 0.85rem;
+    }
+    footer { text-align: center; padding: 20px; color: #999; font-size: 0.8rem; }
+    @media (max-width: 640px) {
+      .cards { flex-direction: column; }
+      .container { padding: 24px 16px; }
+      header h1 { font-size: 1.6rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🛠 中文 AI 工具站</h1>
+      <p>精选 AI 写作工具，让创作更高效</p>
+    </header>
+    <div class="cards">
+      <a class="card" href="xiaohongshu.html">
+        <div class="card-icon red">📕</div>
+        <h2>小红书标题生成器</h2>
+        <p>输入内容主题，AI 自动生成爆款小红书标题，提升点击率和曝光量。</p>
+        <span class="badge">立即使用 →</span>
+      </a>
+      <a class="card" href="rewrite.html">
+        <div class="card-icon blue">✍️</div>
+        <h2>AI 文案改写器</h2>
+        <p>支持口语化、正式、幽默、简洁四种风格，一键改写你的文案。</p>
+        <span class="badge">立即使用 →</span>
+      </a>
+    </div>
+    <div id="ad-slot">广告位预留</div>
+  </div>
+  <footer>&copy; 2026 中文 AI 工具站</footer>
+</body>
+</html>
